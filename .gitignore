@@ -52,3 +52,4 @@ venv.bak/
 
 # Large data files (optional - uncomment if you don't want to track .mat files)
 # *.mat Data/*.mat
+test_folder/*.mat
