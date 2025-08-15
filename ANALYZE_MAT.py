@@ -5,6 +5,7 @@ Detailed analysis of the MATLAB file structure
 
 import h5py
 import numpy as np
+import sys
 
 def analyze_mat_detailed(filename):
     """Detailed analysis of the MATLAB file structure"""
@@ -120,4 +121,9 @@ def analyze_mat_detailed(filename):
         print(f"Trial start events in continuous data: {trial_start_count}")
 
 if __name__ == "__main__":
-    analyze_mat_detailed('8_PM14Ecog_20231217_101228.mat') 
+    if len(sys.argv) > 1:
+        filename = sys.argv[1]
+    else:
+        filename = 'Data/8_PM14Ecog_20231217_101228.mat'
+    
+    analyze_mat_detailed(filename)

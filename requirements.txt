@@ -1,0 +1,4 @@
+h5py>=3.8.0
+matplotlib>=3.5.0
+numpy>=1.21.0
+# tkinter is included in Python standard library - no installation needed
