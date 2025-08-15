@@ -51,4 +51,4 @@ venv.bak/
 .python-version
 
 # Large data files (optional - uncomment if you don't want to track .mat files)
-# *.mat 
+# *.mat Data/*.mat
