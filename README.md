@@ -1,10 +1,8 @@
 # ECoG GUI - Neural Data Visualization Tool
 
-A Python-based GUI application for visualizing ECoG (Electrocorticography) data with special support for experimental events. This tool allows researchers to browse through neural recordings, view raw voltage, frequency band data, power spectral density and correlate neural activity with behavioral events. 
+A Python-based GUI application for visualizing ECoG (Electrocorticography) data with support for experimental events. This tool allows researchers to browse through neural recordings, view raw voltage, frequency band data, power spectral density and correlate neural activity with behavioral events. 
 
 ## Screenshots
-
-![Main Application Window](images/Screenshot1.png)
 
 ![File Selection Dialog](images/Screenshot2.png)
 
@@ -76,15 +74,14 @@ data/
 │   ├── rawVoltage (samples × channels)
 │   └── frequencyBands (samples × bands × channels)
 ├── Events/
-│   ├── trialStart (trial start markers)
-│   ├── licks (lick event markers)
-│   └── reward (reward event markers)
 ├── Metadata/
 │   └── samplingRate
 └── bhv/ (behavioral data)
 ```
 
 ## Usage
+
+![Main Application Window](images/Screenshot1.png)
 
 ### Starting the Application
 
@@ -98,13 +95,6 @@ python3 GUI.py
 2. **Trial Navigation**: Use the "← Prev" and "Next →" buttons or arrow keys to navigate between trials
 3. **Channel Selection**: Check/uncheck channels in the Channel Selection panel
 4. **Plot Mode**: Choose between "Raw Voltage", "Frequency Bands", or "Power Spectrum"
-
-### Understanding the Display
-
-- **Blue triangles (▼)**: Lick events
-- **Red triangles (▲)**: Reward events
-- **Green dots**: Trial start markers
-- **Colored lines**: Neural data from different channels
 
 ## Data Analysis Tools
 
@@ -122,19 +112,6 @@ This tool provides detailed information about:
 - Metadata and sampling information
 - Behavioral data summary
 
-## File Structure
-
-```
-Feldman_GUI/
-├── GUI.py                    # Main ECoG GUI application
-├── ANALYZE_MAT.py            # MATLAB file analysis tool
-├── Data/                     # Data folder for MATLAB files
-│   └── 8_PM14Ecog_20231217_101228.mat
-├── requirements.txt          # Python dependencies
-├── README.md                # This file
-└── .gitignore               # Git ignore rules
-```
-
 ## Troubleshooting
 
 ### Common Issues
@@ -149,13 +126,9 @@ Feldman_GUI/
 Your MATLAB file must contain:
 - `data.ECoG.rawVoltage`: Neural voltage data
 - `data.Events.trialStart`: Trial start markers
-- `data.Events.licks`: Lick event markers (optional)
-- `data.Events.reward`: Reward event markers (optional)
 
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
-
-**Note**: This tool is designed for research purposes. Ensure your data handling complies with relevant institutional and ethical guidelines.
