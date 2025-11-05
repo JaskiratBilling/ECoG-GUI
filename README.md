@@ -9,7 +9,7 @@ A Python-based GUI application for visualizing ECoG (Electrocorticography) data 
 - **Behavioral event markers**: Visualize lick and reward events overlaid on neural data
 - **Flexible time windows**: Adjust viewing window from 2 to 20 seconds
 - **Channel selection**: Select/deselect individual channels or use bulk selection
-- **Multiple plot modes**: Raw voltage, frequency bands, or both simultaneously
+- **Multiple plot modes**: Raw voltage, frequency bands, and power spectrum visualization
 - **MATLAB file support**: Direct loading of .mat files with automatic data structure detection
 
 ## Quick Start
@@ -90,7 +90,7 @@ python3 GUI.py
 1. **File Selection**: The application will automatically load the default file or prompt you to select a .mat file
 2. **Trial Navigation**: Use the "← Prev" and "Next →" buttons or arrow keys to navigate between trials
 3. **Channel Selection**: Check/uncheck channels in the Channel Selection panel
-4. **Plot Mode**: Choose between "Raw Voltage", "Frequency Bands", or "Both"
+4. **Plot Mode**: Choose between "Raw Voltage", "Frequency Bands", or "Power Spectrum"
 5. **Time Window**: Adjust the viewing window (2, 5, 10, or 20 seconds)
 
 ### Understanding the Display
