@@ -4,9 +4,9 @@ A Python-based GUI application for visualizing ECoG (Electrocorticography) data 
 
 ## Screenshots
 
-![File Selection Dialog](images/Screenshot2.png)
-
 ![Power Spectrum Visualization](images/Screenshot4.png)
+
+![File Selection Dialog](images/Screenshot2.png)
 
 ## Features
 
