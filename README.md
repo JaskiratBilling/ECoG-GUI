@@ -2,6 +2,14 @@
 
 A Python-based GUI application for visualizing ECoG (Electrocorticography) data with lick and reward event markers. This tool allows researchers to browse through neural recordings, view raw voltage and frequency band data, and correlate neural activity with behavioral events.
 
+## Screenshots
+
+![Main Application Window](images/Screenshot1.png)
+
+![File Selection Dialog](images/Screenshot2.png)
+
+![Power Spectrum Visualization](images/Screenshot4.png)
+
 ## Features
 
 - **Multi-channel ECoG visualization**: View raw voltage and frequency band data from up to 10 channels
