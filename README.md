@@ -90,7 +90,6 @@ python3 GUI.py
 2. **Trial Navigation**: Use the "← Prev" and "Next →" buttons or arrow keys to navigate between trials
 3. **Channel Selection**: Check/uncheck channels in the Channel Selection panel
 4. **Plot Mode**: Choose between "Raw Voltage", "Frequency Bands", or "Power Spectrum"
-5. **Time Window**: Adjust the viewing window (2, 5, 10, or 20 seconds)
 
 ### Understanding the Display
 
