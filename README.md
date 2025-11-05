@@ -1,6 +1,6 @@
 # ECoG GUI - Neural Data Visualization Tool
 
-A Python-based GUI application for visualizing ECoG (Electrocorticography) data with lick and reward event markers. This tool allows researchers to browse through neural recordings, view raw voltage and frequency band data, and correlate neural activity with behavioral events.
+A Python-based GUI application for visualizing ECoG (Electrocorticography) data with special support for experimental events. This tool allows researchers to browse through neural recordings, view raw voltage, frequency band data, power spectral density and correlate neural activity with behavioral events. 
 
 ## Screenshots
 
@@ -14,11 +14,10 @@ A Python-based GUI application for visualizing ECoG (Electrocorticography) data 
 
 - **Multi-channel ECoG visualization**: View raw voltage and frequency band data from up to 10 channels
 - **Trial-based navigation**: Browse through experimental trials with easy navigation controls
-- **Behavioral event markers**: Visualize lick and reward events overlaid on neural data
-- **Flexible time windows**: Adjust viewing window from 2 to 20 seconds
-- **Channel selection**: Select/deselect individual channels or use bulk selection
+- **Behavioral event markers**: Visualize behavioral/experimental events overlaid on neural data
+- **Channel selection**: Select/deselect individual channels
 - **Multiple plot modes**: Raw voltage, frequency bands, and power spectrum visualization
-- **MATLAB file support**: Direct loading of .mat files with automatic data structure detection
+- **MATLAB file support**: Direct loading of .mat files with automatic data structure detection and analysis
 
 ## Quick Start
 
@@ -69,7 +68,7 @@ python3 GUI.py
 
 ### Data Preparation
 
-Place your MATLAB (.mat) files in the `Data/` folder. The application expects MATLAB files with the following structure:
+The application expects MATLAB files with the following structure:
 
 ```
 data/
@@ -99,7 +98,6 @@ python3 GUI.py
 2. **Trial Navigation**: Use the "← Prev" and "Next →" buttons or arrow keys to navigate between trials
 3. **Channel Selection**: Check/uncheck channels in the Channel Selection panel
 4. **Plot Mode**: Choose between "Raw Voltage", "Frequency Bands", or "Power Spectrum"
-5. **Time Window**: Adjust the viewing window (2, 5, 10, or 20 seconds)
 
 ### Understanding the Display
 
@@ -107,13 +105,6 @@ python3 GUI.py
 - **Red triangles (▲)**: Reward events
 - **Green dots**: Trial start markers
 - **Colored lines**: Neural data from different channels
-
-### Quick Tips
-
-- Use "Select All" and "Deselect All" buttons for quick channel management
-- Navigate to specific trials using the "Go to trial" input field
-- Switch between plot modes to focus on different aspects of the data
-- Adjust time windows to see more or less detail
 
 ## Data Analysis Tools
 
@@ -161,30 +152,9 @@ Your MATLAB file must contain:
 - `data.Events.licks`: Lick event markers (optional)
 - `data.Events.reward`: Reward event markers (optional)
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Built for neuroscience research applications
-- Designed for ECoG data analysis workflows
-- Supports behavioral correlation analysis
-
-## Support
-
-For issues and questions:
-1. Check the troubleshooting section above
-2. Use `ANALYZE_MAT.py` to verify your data format
-3. Open an issue on GitHub with detailed error information
 
 ---
 
